@@ -9,7 +9,7 @@
 ```mermaid
 graph LR
     A[本リポジトリ] -->|ビルド＆デプロイ| B[CloudBuild]
-    B ->|プッシュ| C[ArtifactRegistry]
+    B -->|プッシュ| C[ArtifactRegistry]
     C -->|デプロイ| D[CloudRun]
     D <-->|永続化ファイルを保存| E[CloudStorage]
     F[ユーザー] -->|Webアクセス| D
